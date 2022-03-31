@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    position: relative;
+    background-color: rgb(252, 252, 252);
+}
+
+h2 {
+    text-align: center;
+    text-decoration:double;
+    color: black;
+    position: relative;
+}
+
+h2:hover {
+    color: rgb(97, 97, 81);
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+
+.calculator {
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 37px;
+    width: 400px;
+}
+
+.calculator-screen {
+    width: 100%;
+    height: 100px;
+    background-color: #252525;
+    color: #fff;
+    text-align: right;
+    font-size: 36px;
+    border: none;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.calculator-keys {
+    width: 100%;
+}
+
+.row {
+    display: flex;
+}
+
+button {
+    height: 80px;
+    background-color: gray;
+    border: 1px solid black;
+    font-size: 32px;
+    color: #fff;
+    width: 25%;
+    outline: none;
+}
+
+.all-clear, .zero-btn {
+    width: 50%;
+}
+
+.operator, .equal-sign {
+    background-color: orange;
+}
+
+.percentage {
+    background-color: gray;
+}
+
+.operator:hover, .equal-sign:hover {
+    background-color: darkorange;
+}
+
+button:hover, .percentage:hover {
+    background-color: darkgray;
+}
+
+.bocil {
+    width: 200px;
+    margin-top: -200px;
+    margin-left: 20px;
+    position: fixed;
+    transition: transform .2s;
+}
+
+.bocil:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.background {
+    width: 100%;
+    margin-top: -100px;
+    position: absolute;
+}
+
+@media(max-width:1000px) {
+    .calculator {
+        width: 350px;
+    }
+    
+    .bocil {
+        width: 170px;
+        margin-top: -160px;
+        margin-left: 0;
+    }
+
+    .bocil:hover {
+        transform: scale(0.8);
+        cursor: pointer;
+    }
+}
+
+@media(max-width:670px) {
+    .calculator {
+        width: 300px;
+    }
+
+    .bocil {
+        width: 0;
+    }
+
+    
+}
